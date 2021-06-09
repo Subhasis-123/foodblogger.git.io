@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>
+            From validation!!
+        </title>
+       <link rel="stylesheet" href="iooo.css">
+       
+        <script>
+            function valid()
+            {
+                var user=document.getElementById("username");
+                var pass=document.getElementById("pass");
+               // var dob=document.getElementById("date");
+                
+                   //if(user.value==""||pass.value=="")
+                   //{
+                      // alert("you can't blank username and pass");
+                      // return false;
+
+                  // }
+                 // if(user.value=="subhasis" || pass.value=="00089726")
+                  //{
+                 //     alert("success");
+                   //   return false;
+                 // }
+                   if(user.value.trim()=="")
+                    {
+                       alert("sorry you can't blank username");
+                       document.getElementById("lbluser").style.visibility="visible";
+                       user.style.border="3px solid red";
+                       return false;
+                    }
+                 else if (pass.value.trim()=="")
+                    {
+                     alert("sorry you can't blank password");
+                    document.getElementById("llb").style.visibility="visible";
+                    pass.style.border="3px solid blue";
+                        return false;
+                    }
+                else if(pass.value.trim().length<5)
+                    {   
+                
+                        alert("password to short");
+                        return false;
+                    }
+                else if(user.value.trim().length<5)
+                    {
+                        alert("username to short")
+                        return false;
+                    }
+              /*  else if(dob.value.trim()=="")
+                {
+                    alert("can't space");
+                    dob.style.border="3px solid red";
+                    document.getElementById("llba").style.visibility="visible";
+                    return false;
+                }*/
+            
+              
+                else
+                     {
+                        
+                        alert("Sucessfullly log::");
+                        return true;
+                     }
+            
+              
+                
+            }
+
+        </script>
+    </head>
+    <body>
+        
+       
+        
+        
+        <form onsubmit="return valid()" action="vscode.html" method="port">
+        
+        
+            <div>
+                <h1 class="op"><marquee>Welcome to Food_Court </marquee></h1>
+                <h1 class="class2"> : LOG_IN </h1>
+            
+            <br><br>
+           USERNAME: <input id="username"  type="text" placeholder="Enter your username"/>
+          <label id="lbluser" style ="color:red ; visibility:hidden;">invalid username</label>
+
+          PASSWORD:  <input id="pass" type="text" placeholder="Enter your password"/>
+            <label id ="llb" style="color:red; visibility: hidden;">invalid password</label>
+            <br>
+           
+            <button onclick="valid()">Submit</button>
+            
+            <button>Reset</button>
+        </div>
+            
+        
+        </form>
+    </div>
+    </body>
+</html>
