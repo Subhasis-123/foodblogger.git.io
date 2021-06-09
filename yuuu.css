@@ -1,0 +1,22 @@
+div{
+        margin:100px auto;
+        width: 250px;
+       padding:50px 30px;
+        background-image: url("food/bol.jpg");
+       border: 100px;
+       color:white;
+       border-radius: 100px;
+        
+
+}
+body{
+    background-image: url("food/bolo.jpg");
+}
+#text1
+{
+    text-shadow: 5px 5px 5px red;
+}
+#text2
+{
+  text-shadow: 2px 3px 5px red;
+}

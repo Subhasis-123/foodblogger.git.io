@@ -1,0 +1,132 @@
+
+
+
+
+
+#slid
+{
+    border:3px solid purple;
+    
+}
+.er
+{
+    border: 0px;
+    width:100%;
+    padding-right: 2px;
+}
+
+.foot
+{
+    text-align: center;
+    
+}
+#lp
+{   
+    text-align: center;
+    
+    border-radius:20px;
+    height: 7%;
+    background-color: purple;
+    padding:2px;
+
+}
+#jk
+{
+    font-weight:50px;
+    color:white;
+}
+.zoom
+{
+    transition: transform 0.5s;
+}
+.zoom:hover{
+    transform: scale(1.1);
+}
+.loop
+{
+    height: 180px;
+    border:3px ;
+    border-radius: 50px ;
+    padding-top: 5px;
+    border-top: 70px;
+}
+.loop5
+{
+    height: 180px;
+    padding-left: 15px;
+
+}
+.loop6
+{
+    height: 180px;
+    padding-left: 20px;
+}
+.loop7
+{
+    height: 170px;
+    padding-left:15px;
+
+}
+#footerr
+{
+    text-align: center;
+    font-size: 20px;
+    border: 3px solid;
+    background-color: purple;
+    color:white;
+   
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+ul{
+    
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+    border-radius:2px;
+    
+
+}
+ul li{
+    float: left;
+    width:188.5px;
+    border:1px solid black;
+    text-align: center;
+    background-color: green;
+    margin: 2px;
+    position: relative;
+  
+    
+}
+
+ul li a{
+    text-decoration: none;
+   
+    color:white;
+    width:188px;
+   
+}
+
+li a:hover{
+  
+    
+  
+    background-color:red;
+ 
+    
+     
+  }
+ul ul{
+    display: none;
+    position: absolute;
+    width:188px;
+
+}
+ul li:hover>ul
+{
+    display: block;
+}
